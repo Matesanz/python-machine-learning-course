@@ -14,43 +14,10 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.9"
-
     - name: Setup Poetry
       uses: abatilo/actions-poetry@v2
-
-    - name: Create release branch
-      run: |
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git config --global user.name "github-actions[bot]"
-        git checkout -b release-$(semantic-release print-version)
 
     - name: Python Semantic Release
       uses: relekang/python-semantic-release@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        title: "Release version"
-        body: "New version is ready to be merged"
-        branch: "release"
-
-    - name: Auto approve
-      uses: hmarr/auto-approve-action@v2.0.0
-      with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
-
-    - name: Merge Pull Request
-      uses: pascalgn/automerge-action@v0.14.2
-      env:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        MERGE_LABELS: ""
-        MERGE_METHOD: "squash"
-        MERGE_COMMIT_MESSAGE: "Automatic merge of release version"
-        MERGE_FORKS: "false"
-        UPDATE_LABELS: ""
