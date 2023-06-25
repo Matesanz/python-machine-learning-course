@@ -11,28 +11,27 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: 3.8
+        python-version: "3.9"
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install python-semantic-release
+    - name: Setup Poetry
+      uses: abatilo/actions-poetry@v2
 
     - name: Create release branch
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git checkout -b release
+        git checkout -b release-$(semantic-release print-version)
 
-    - name: Run Semantic Release
-      run: |
-        semantic-release version
-        git commit -am "chore(release): release version"
-        git push origin release
+    - name: Python Semantic Release
+      uses: relekang/python-semantic-release@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
