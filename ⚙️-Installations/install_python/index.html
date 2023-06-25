@@ -1,0 +1,647 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>🐍 Python Installation - 🐍 Python for Machine Learning Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="🐍 Python for Machine Learning Course" class="md-header__button md-logo" aria-label="🐍 Python for Machine Learning Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🐍 Python for Machine Learning Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🐍 Python Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Matesanz/python_machine_learning_course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Matesanz/python_machine_learning_course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      👋 Welcome Python for Machine Learning!
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../install_anaconda/" class="md-tabs__link md-tabs__link--active">
+        ⚙️ Installations
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="🐍 Python for Machine Learning Course" class="md-nav__button md-logo" aria-label="🐍 Python for Machine Learning Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    🐍 Python for Machine Learning Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Matesanz/python_machine_learning_course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Matesanz/python_machine_learning_course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        👋 Welcome Python for Machine Learning!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          ⚙️ Installations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="⚙️ Installations" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          ⚙️ Installations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_anaconda/" class="md-nav__link">
+        📦 Anaconda Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_docker/" class="md-nav__link">
+        🐋 Docker Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_git/" class="md-nav__link">
+        🌳 GIT Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          🐍 Python Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        🐍 Python Installation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python-on-windows" class="md-nav__link">
+    🪟 Installing Python on Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python-on-macos" class="md-nav__link">
+    🍏 Installing Python on macOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-python-on-ubuntu" class="md-nav__link">
+    🐧 Installing Python on Ubuntu
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../isntall_vscode/" class="md-nav__link">
+        💻 VSCode Installation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/Matesanz/python_machine_learning_course/edit/master/docs/⚙️-Installations/install_python.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="python-installation">🐍 Python Installation</h1>
+<ul>
+<li><a href="#-python-installation">🐍 Python Installation</a></li>
+<li><a href="#-installing-python-on-windows">🪟 Installing Python on Windows</a></li>
+<li><a href="#-installing-python-on-macos">🍏 Installing Python on macOS</a></li>
+<li><a href="#-installing-python-on-ubuntu">🐧 Installing Python on Ubuntu</a></li>
+</ul>
+<p><strong>Python is a popular programming language</strong> that is widely used in the field of engineering and various other domains. It is known for its simplicity, readability, and versatility, making it a <strong>great choice for beginners in engineering</strong>.  Python is a high-level programming language that allows you to write code to solve problems, automate tasks, and build software applications. It provides a straightforward syntax that is easy to understand and read, making it beginner-friendly.</p>
+<p>Python offers a <strong>wide range of libraries</strong> and frameworks that extend its capabilities, making it suitable for various engineering applications. Some of these libraries are specifically designed for s<strong>cientific computing, data analysis, machine learning, and visualization,</strong> which are essential areas in engineering.</p>
+<p>Here are a few reasons why Python is popular among engineers:</p>
+<ol>
+<li>
+<p><strong>Simplicity</strong>: Python emphasizes readability and simplicity, making it easier for beginners to write and understand code. It has a clear and concise syntax that resembles plain English, reducing the learning curve for new programmers.</p>
+</li>
+<li>
+<p><strong>Versatility</strong>: Python is a versatile language that can be used for various engineering tasks. Whether you need to perform complex calculations, process data, create simulations, or develop control systems, Python has the tools and libraries to support those needs.</p>
+</li>
+<li>
+<p><strong>Large and Active Community</strong>: Python has a vast and active community of developers and engineers who contribute to its growth. This means that there are abundant learning resources, tutorials, and support available, making it easier to find answers to questions and seek help when needed.</p>
+</li>
+<li>
+<p><strong>Extensive Libraries</strong>: Python offers numerous libraries and frameworks tailored for engineering tasks. For example, NumPy provides powerful numerical computing capabilities, Pandas facilitates data manipulation and analysis, Matplotlib enables data visualization, and SciPy offers a wide range of scientific computing functions.</p>
+</li>
+<li>
+<p><strong>Integration with Other Languages</strong>: Python can be easily integrated with other programming languages, allowing engineers to leverage existing software and tools. It can be used alongside languages like C, C++, and Fortran, enabling access to high-performance computing capabilities and specialized libraries.</p>
+</li>
+<li>
+<p><strong>Rapid Prototyping</strong>: Python's simplicity and expressiveness make it ideal for rapid prototyping. Engineers can quickly develop and test ideas, algorithms, and models without getting caught up in complex syntax or low-level details.</p>
+</li>
+</ol>
+<p>Overall, Python is a versatile and beginner-friendly programming language that provides a solid foundation for engineers. It allows you to automate tasks, analyze data, perform simulations, and develop software applications. With its extensive libraries and active community, Python offers an excellent platform for learning and applying engineering principles and concepts.</p>
+<ul>
+<li><a href="#-python-installation">🐍 Python Installation</a></li>
+<li><a href="#-installing-python-on-windows">🪟 Installing Python on Windows</a></li>
+<li><a href="#-installing-python-on-macos">🍏 Installing Python on macOS</a></li>
+<li><a href="#-installing-python-on-ubuntu">🐧 Installing Python on Ubuntu</a></li>
+</ul>
+<h2 id="installing-python-on-windows">🪟 Installing Python on Windows</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kn1HF3oD19c?start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<ol>
+<li>
+<p>Visit the official Python website at <a href="https://www.python.org/">python.org</a> and navigate to the Downloads section.</p>
+</li>
+<li>
+<p>Scroll down to the "Python Releases for Windows" section and click on the "Download Python" button for the latest stable version.</p>
+</li>
+<li>
+<p>On the download page, scroll down and select the Windows installer appropriate for your system (32-bit or 64-bit). Choose the installer that matches your operating system.</p>
+</li>
+<li>
+<p>Once the installer is downloaded, double-click on it to run it. If prompted by User Account Control, click "Yes" to allow the installer to make changes to your device.</p>
+</li>
+<li>
+<p>In the Python installer, ensure that the "Install launcher for all users" and "Add Python to PATH" options are selected. Then, click on the "Customize installation" button.</p>
+</li>
+<li>
+<p>In the customization options, you can choose the optional features you want to install, such as pip (package installer for Python packages) and adding Python to the system PATH. Adjust the options according to your preferences and requirements.</p>
+</li>
+<li>
+<p>Click on the "Next" button and then choose the installation location. The default location is usually recommended. Click "Install" to start the installation process.</p>
+</li>
+<li>
+<p>Wait for the installation to complete. Once finished, you'll see a screen confirming the successful installation. Ensure that the checkbox for "Disable path length limit" is checked, and then click on the "Close" button.</p>
+</li>
+<li>
+<p>Open the Command Prompt or PowerShell and type <code>python --version</code> to verify that Python is installed correctly. You should see the installed Python version displayed.</p>
+</li>
+</ol>
+<p>Congratulations! You have successfully installed Python on Windows.</p>
+<h2 id="installing-python-on-macos">🍏 Installing Python on macOS</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ezUCZiMXB20?start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<ol>
+<li>
+<p>Open a web browser and visit the official Python website at <a href="https://www.python.org/">python.org</a>. Go to the Downloads section.</p>
+</li>
+<li>
+<p>Scroll down to the "Python Releases for macOS" section and click on the "Download Python" button for the latest stable version.</p>
+</li>
+<li>
+<p>On the download page, you'll find a list of installers. Choose the macOS installer appropriate for your system.</p>
+</li>
+<li>
+<p>Once the installer is downloaded, double-click on it to open it. You'll see a package file with a <code>.pkg</code> extension.</p>
+</li>
+<li>
+<p>Double-click on the package file and follow the instructions provided by the installer.</p>
+</li>
+<li>
+<p>During the installation process, you may be asked to enter your administrator password. Provide the necessary credentials and proceed with the installation.</p>
+</li>
+<li>
+<p>Once the installation is complete, open the Terminal application by going to "Applications" &gt; "Utilities" &gt; "Terminal".</p>
+</li>
+<li>
+<p>In the Terminal, type <code>python3 --version</code> and press Enter to verify that Python is installed correctly. You should see the installed Python version displayed.</p>
+</li>
+</ol>
+<p>That's it! You have successfully installed Python on macOS.</p>
+<h2 id="installing-python-on-ubuntu">🐧 Installing Python on Ubuntu</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w7v4CZt1po8?start=53" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<ol>
+<li>
+<p>Open a terminal on your Ubuntu system. You can do this by pressing <code>Ctrl + Alt + T</code> or by searching for "Terminal" in the application launcher.</p>
+</li>
+<li>
+<p>Ubuntu typically comes with Python pre-installed. However, it's recommended to install the latest version using the package manager. In the terminal, type the following command and press Enter:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3
+</code></pre></div></p>
+</li>
+<li>
+<p>The package manager will update the package lists and install Python 3 along with its dependencies. You may be prompted to enter your password for authentication.</p>
+</li>
+<li>
+<p>Once the installation is complete, you can verify the Python version by typing <code>python3 --version</code> in the terminal. The installed Python version will be displayed.</p>
+</li>
+</ol>
+<p>You have successfully installed Python on Ubuntu!</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../install_git/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🌳 GIT Installation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              🌳 GIT Installation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../isntall_vscode/" class="md-footer__link md-footer__link--next" aria-label="Next: 💻 VSCode Installation" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              💻 VSCode Installation
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
