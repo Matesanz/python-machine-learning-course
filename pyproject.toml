@@ -40,6 +40,7 @@ minor_emoji = "✨,🚑,🎉"  # feature, hotfix, begin
 patch_emoji = "🐛,🩹,🔒,📝,⚡️,👷"  # bugfix, simple fix, security, docs, performance
 build_command = "poetry build"
 upload_to_repository = false
+branch = "main"
 
 [tool.black]
 line_length = 100
