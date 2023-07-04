@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.4 (2023-07-04)
+
+### Other
+
+* Merge pull request #6 from Matesanz:fix-release-pipeline ([`14874d3`](https://github.com/Matesanz/python-machine-learning-course/commit/14874d3e28c9629382b7e6247e91e6d8363f6e41))
+* 🔧 add a release to github release on push ([`9a8922d`](https://github.com/Matesanz/python-machine-learning-course/commit/9a8922df5546282bb7a387f611e70064a2359c88))
+
 ## v0.1.3 (2023-07-04)
 
 ### Other
