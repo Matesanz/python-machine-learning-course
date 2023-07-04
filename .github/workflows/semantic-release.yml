@@ -28,6 +28,6 @@ jobs:
         installer-parallel: true
 
     - name: Python Semantic Release
-      uses: relekang/python-semantic-release@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        pip install python-semantic-release
+        semantic-release publish
