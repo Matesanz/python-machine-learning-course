@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-07-04)
+
+### Other
+
+* Merge pull request #9 from Matesanz:add-standard-library-tutorials ([`7483c96`](https://github.com/Matesanz/python-machine-learning-course/commit/7483c96c14a280eb6452d213ceb841a63e19b293))
+
 ## v0.2.0 (2023-07-04)
 
 ### Other
