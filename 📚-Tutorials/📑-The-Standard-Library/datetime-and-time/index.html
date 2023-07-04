@@ -13,7 +13,7 @@
     
     
       
-        <title>🎓 The Dataclasses Module - 🐍 Python for Machine Learning Course</title>
+        <title>📅 Datetime and Time - 🐍 Python for Machine Learning Course</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-dataclasses-module" class="md-skip">
+        <a href="#datetime-and-time" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🎓 The Dataclasses Module
+              📅 Datetime and Time
             
           </span>
         </div>
@@ -652,14 +652,14 @@
       
       
         <label class="md-nav__link" for="__nav_3_2">
-          📑 The Standard Library.ipynb
+          📑 The Standard Library
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="📑 The Standard Library.ipynb" data-md-level="2">
+      <nav class="md-nav" aria-label="📑 The Standard Library" data-md-level="2">
         <label class="md-nav__title" for="__nav_3_2">
           <span class="md-nav__icon md-icon"></span>
-          📑 The Standard Library.ipynb
+          📑 The Standard Library
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -695,6 +695,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../dataclasses/" class="md-nav__link">
+        🎓 The Dataclasses Module
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -707,12 +721,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          🎓 The Dataclasses Module
+          📅 Datetime and Time
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        🎓 The Dataclasses Module
+        📅 Datetime and Time
       </a>
       
         
@@ -731,29 +745,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-creating-a-data-class" class="md-nav__link">
-    1. Creating a Data Class
+  <a href="#1-the-datetime-object" class="md-nav__link">
+    1. The Datetime Object
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-default-field-values" class="md-nav__link">
-    2. Default Field Values
+  <a href="#12-the-date-object" class="md-nav__link">
+    1.2 The Date Object
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-adding-methods" class="md-nav__link">
-    3. Adding Methods
+  <a href="#3-the-timedelta-object" class="md-nav__link">
+    3. The Timedelta Object
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-immutable-data-classes" class="md-nav__link">
-    4. Immutable Data Classes
+  <a href="#4-formatting-dates-and-times" class="md-nav__link">
+    4. Formatting Dates and Times
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-the-time-function" class="md-nav__link">
+    5. The time() function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-sleep-function" class="md-nav__link">
+    6. The sleep() function
   </a>
   
 </li>
@@ -762,20 +790,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datetime-and-time/" class="md-nav__link">
-        📅 Datetime and Time
-      </a>
     </li>
   
 
@@ -863,29 +877,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-creating-a-data-class" class="md-nav__link">
-    1. Creating a Data Class
+  <a href="#1-the-datetime-object" class="md-nav__link">
+    1. The Datetime Object
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-default-field-values" class="md-nav__link">
-    2. Default Field Values
+  <a href="#12-the-date-object" class="md-nav__link">
+    1.2 The Date Object
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-adding-methods" class="md-nav__link">
-    3. Adding Methods
+  <a href="#3-the-timedelta-object" class="md-nav__link">
+    3. The Timedelta Object
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-immutable-data-classes" class="md-nav__link">
-    4. Immutable Data Classes
+  <a href="#4-formatting-dates-and-times" class="md-nav__link">
+    4. Formatting Dates and Times
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-the-time-function" class="md-nav__link">
+    5. The time() function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-the-sleep-function" class="md-nav__link">
+    6. The sleep() function
   </a>
   
 </li>
@@ -904,7 +932,7 @@
                 
                   
 
-  <a href="https://github.com/Matesanz/python_machine_learning_course/edit/master/docs/📚-Tutorials/📑-The-Standard-Library.ipynb/dataclasses.ipynb" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/Matesanz/python_machine_learning_course/edit/master/docs/📚-Tutorials/📑-The-Standard-Library/datetime-and-time.ipynb" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
@@ -1947,8 +1975,7 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="the-dataclasses-module">&#127891; The Dataclasses Module<a class="anchor-link" href="#the-dataclasses-module">&#182;</a></h1><p><code>dataclasses</code> is a module for creating classes which are primarily used to store data. These classes, called data classes, have automatically added special methods, including <code>__init__()</code>, <code>__repr__()</code>, and <code>__eq__()</code>.</p>
-
+<h1 id="datetime-and-time">&#128197; Datetime and Time<a class="anchor-link" href="#datetime-and-time">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -1959,13 +1986,14 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1-creating-a-data-class">1. Creating a Data Class<a class="anchor-link" href="#1-creating-a-data-class">&#182;</a></h2><p>Here is how you can define a simple data class:</p>
+<p>The <code>datetime</code> module in Python is used for dealing with dates and time.</p>
+<h3 id="1-the-datetime-object">1. The Datetime Object<a class="anchor-link" href="#1-the-datetime-object">&#182;</a></h3><p>You can create a <code>datetime</code> object to represent a specific point in time:</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -1985,24 +2013,47 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 
-<span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+<span class="c1"># Create a datetime object for the current date and time</span>
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>  <span class="c1"># e.g., prints: year-month-day hour:minute:second.microsecond</span>
 </pre></div>
-<div id="cell-1" class="clipboard-copy-txt">from dataclasses import dataclass
+<div id="cell-1" class="clipboard-copy-txt">from datetime import datetime
 
-@dataclass
-class Point:
-    x: int
-    y: int</div>
+# Create a datetime object for the current date and time
+now = datetime.now()
+
+print(now)  # e.g., prints: year-month-day hour:minute:second.microsecond</div>
     
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2023-07-04 20:47:49.435519
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -2013,7 +2064,7 @@ class Point:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This <code>Point</code> class has two fields, <code>x</code> and <code>y</code>, both of type <code>int</code>. The <code>@dataclass</code> decorator automatically adds a number of special methods to the class, including a constructor function (<code>__init__()</code>) to initialize the data attributes:</p>
+<h3 id="12-the-date-object">1.2 The Date Object<a class="anchor-link" href="#12-the-date-object">&#182;</a></h3><p>You can also create a <code>date</code> object to represent a date without a time:</p>
 
 </div>
 </div>
@@ -2039,11 +2090,19 @@ class Point:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>  <span class="c1"># Outputs: Point(x=1, y=2)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="c1"># Create a date object for the current date</span>
+<span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="p">)</span>  <span class="c1"># e.g., prints: year-month-day</span>
 </pre></div>
-<div id="cell-2" class="clipboard-copy-txt">p = Point(1, 2)
-print(p)  # Outputs: Point(x=1, y=2)</div>
+<div id="cell-2" class="clipboard-copy-txt">from datetime import date
+
+# Create a date object for the current date
+today = date.today()
+
+print(today)  # e.g., prints: year-month-day</div>
     
         </div>
     </div>
@@ -2065,7 +2124,7 @@ print(p)  # Outputs: Point(x=1, y=2)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Point(x=1, y=2)
+<pre>2023-07-04
 </pre>
 </div>
 </div>
@@ -2082,13 +2141,13 @@ print(p)  # Outputs: Point(x=1, y=2)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2-default-field-values">2. Default Field Values<a class="anchor-link" href="#2-default-field-values">&#182;</a></h2><p>You can specify default values for fields:</p>
+<h3 id="3-the-timedelta-object">3. The Timedelta Object<a class="anchor-link" href="#3-the-timedelta-object">&#182;</a></h3><p><code>timedelta</code> objects represent a duration, or the difference between two dates or times:</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2108,24 +2167,53 @@ print(p)  # Outputs: Point(x=1, y=2)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
 
-<span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># Create a timedelta of 7 days</span>
+<span class="n">week</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="c1"># Add 7 days to today&#39;s date</span>
+<span class="n">next_week</span> <span class="o">=</span> <span class="n">today</span> <span class="o">+</span> <span class="n">week</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">next_week</span><span class="p">)</span>  <span class="c1"># e.g., prints: year-month-day</span>
 </pre></div>
-<div id="cell-3" class="clipboard-copy-txt">from dataclasses import dataclass
+<div id="cell-3" class="clipboard-copy-txt">from datetime import timedelta
 
-@dataclass
-class Point:
-    x: int = 0
-    y: int = 0</div>
+# Create a timedelta of 7 days
+week = timedelta(days=7)
+
+# Add 7 days to today's date
+next_week = today + week
+
+print(next_week)  # e.g., prints: year-month-day</div>
     
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2023-07-11
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -2136,7 +2224,7 @@ class Point:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>When you create an instance of this class, you can omit values for any of the fields to use their default values:</p>
+<h3 id="4-formatting-dates-and-times">4. Formatting Dates and Times<a class="anchor-link" href="#4-formatting-dates-and-times">&#182;</a></h3><p>You can format <code>datetime</code> objects as strings using the <code>strftime</code> method, which stands for "string format time". You can also convert strings to <code>datetime</code> objects using the <code>strptime</code> method, which stands for "string parse time".</p>
 
 </div>
 </div>
@@ -2162,11 +2250,29 @@ class Point:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>  <span class="c1"># Outputs: Point(x=0, y=0)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+<span class="c1"># Convert datetime to string</span>
+<span class="n">date_string</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">date_string</span><span class="p">)</span>  <span class="c1"># e.g., prints: 2023-07-02 18:42:05</span>
+
+<span class="c1"># Convert string to datetime</span>
+<span class="n">date_object</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_string</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">date_object</span><span class="p">)</span>  <span class="c1"># e.g., prints: year-month-day hour:minute:second</span>
 </pre></div>
-<div id="cell-4" class="clipboard-copy-txt">p = Point()
-print(p)  # Outputs: Point(x=0, y=0)</div>
+<div id="cell-4" class="clipboard-copy-txt">from datetime import datetime
+
+now = datetime.now()
+
+# Convert datetime to string
+date_string = now.strftime("%Y-%m-%d %H:%M:%S")
+print(date_string)  # e.g., prints: 2023-07-02 18:42:05
+
+# Convert string to datetime
+date_object = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+print(date_object)  # e.g., prints: year-month-day hour:minute:second</div>
     
         </div>
     </div>
@@ -2188,7 +2294,8 @@ print(p)  # Outputs: Point(x=0, y=0)</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Point(x=0, y=0)
+<pre>2023-07-04 20:47:49
+2023-07-04 20:47:49
 </pre>
 </div>
 </div>
@@ -2205,13 +2312,13 @@ print(p)  # Outputs: Point(x=0, y=0)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3-adding-methods">3. Adding Methods<a class="anchor-link" href="#3-adding-methods">&#182;</a></h2><p>Like any other classes, data classes can have methods:</p>
+<h3 id="5-the-time-function">5. The time() function<a class="anchor-link" href="#5-the-time-function">&#182;</a></h3><p>The <code>time()</code> function returns the number of seconds passed since epoch. The epoch is the point where the time starts, and it is platform dependent. For Unix system, the epoch is 1st January 1970.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2231,30 +2338,43 @@ print(p)  # Outputs: Point(x=0, y=0)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
 
-<span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
-
-    <span class="k">def</span> <span class="nf">distance_from_origin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span>
+<span class="n">seconds</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Seconds since epoch: </span><span class="si">{</span><span class="n">seconds</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>  <span class="c1"># e.g., prints: Seconds since epoch, epoch starts at 1970-01-01 00:00:00</span>
 </pre></div>
-<div id="cell-5" class="clipboard-copy-txt">from dataclasses import dataclass
+<div id="cell-5" class="clipboard-copy-txt">import time
 
-@dataclass
-class Point:
-    x: int
-    y: int
-
-    def distance_from_origin(self):
-        return (self.x ** 2 + self.y ** 2) ** 0.5</div>
+seconds = time.time()
+print(f"Seconds since epoch: {seconds}")  # e.g., prints: Seconds since epoch, epoch starts at 1970-01-01 00:00:00</div>
     
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Seconds since epoch: 1688496469.474827
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -2265,7 +2385,7 @@ class Point:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>You can call this method like any other method:</p>
+<h3 id="6-the-sleep-function">6. The sleep() function<a class="anchor-link" href="#6-the-sleep-function">&#182;</a></h3><p>The <code>sleep()</code> function suspends (delays) execution of the current thread for the given number of seconds.</p>
 
 </div>
 </div>
@@ -2291,11 +2411,17 @@ class Point:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">distance_from_origin</span><span class="p">())</span>  <span class="c1"># Outputs: 5.0</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is printed immediately.&quot;</span><span class="p">)</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.5</span><span class="p">)</span>  <span class="c1"># waits for 2.5 seconds</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is printed after 2.5 seconds.&quot;</span><span class="p">)</span>
 </pre></div>
-<div id="cell-6" class="clipboard-copy-txt">p = Point(3, 4)
-print(p.distance_from_origin())  # Outputs: 5.0</div>
+<div id="cell-6" class="clipboard-copy-txt">import time
+
+print("This is printed immediately.")
+time.sleep(2.5)  # waits for 2.5 seconds
+print("This is printed after 2.5 seconds.")</div>
     
         </div>
     </div>
@@ -2317,7 +2443,8 @@ print(p.distance_from_origin())  # Outputs: 5.0</div>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5.0
+<pre>This is printed immediately.
+This is printed after 2.5 seconds.
 </pre>
 </div>
 </div>
@@ -2326,149 +2453,6 @@ print(p.distance_from_origin())  # Outputs: 5.0</div>
 
 </div>
 
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4-immutable-data-classes">4. Immutable Data Classes<a class="anchor-link" href="#4-immutable-data-classes">&#182;</a></h2><p>You can make a data class immutable (i.e., read-only) by setting the <code>frozen</code> parameter of the <code>@dataclass</code> decorator to <code>True</code>:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-7">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
-
-<span class="nd">@dataclass</span><span class="p">(</span><span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
-</pre></div>
-<div id="cell-7" class="clipboard-copy-txt">from dataclasses import dataclass
-
-@dataclass(frozen=True)
-class Point:
-    x: int
-    y: int</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This will prevent modifying the fields of instances of the class:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-8">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Raises dataclasses.FrozenInstanceError</span>
-</pre></div>
-<div id="cell-8" class="clipboard-copy-txt">p = Point(1, 2)
-p.x = 3  # Raises dataclasses.FrozenInstanceError</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FrozenInstanceError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[8], line 2</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> p = Point(1, 2)
-<span class="ansi-green-fg">----&gt; 2</span> p.x = 3  # Raises dataclasses.FrozenInstanceError
-
-File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-cyan-fg">__setattr__</span><span class="ansi-blue-fg">(self, name, value)</span>
-
-<span class="ansi-red-fg">FrozenInstanceError</span>: cannot assign to field &#39;x&#39;</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Data classes make it easier to create classes that are mainly used to store data. They automatically generate special methods that are commonly used in such classes, reducing the boilerplate involved.</p>
-
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -2494,7 +2478,7 @@ File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-c
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../collections/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 👪 The Collections Module" rel="prev">
+        <a href="../dataclasses/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🎓 The Dataclasses Module" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2503,20 +2487,20 @@ File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-c
               <span class="md-footer__direction">
                 Previous
               </span>
-              👪 The Collections Module
+              🎓 The Dataclasses Module
             </div>
           </div>
         </a>
       
       
         
-        <a href="../datetime-and-time/" class="md-footer__link md-footer__link--next" aria-label="Next: 📅 Datetime and Time" rel="next">
+        <a href="../itertools/" class="md-footer__link md-footer__link--next" aria-label="Next: 🌪️ Itertools" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              📅 Datetime and Time
+              🌪️ Itertools
             </div>
           </div>
           <div class="md-footer__button md-icon">
