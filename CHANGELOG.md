@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.2 (2023-07-04)
+
+### Other
+
+* Merge pull request #4 from Matesanz:add-basic-python-tutorials ([`3df53ad`](https://github.com/Matesanz/python-machine-learning-course/commit/3df53ad739f0bfb5ce13808bc58af116cb8cb78a))
+* Merge pull request #3 from Matesanz:fix-build-pipeline ([`93c7542`](https://github.com/Matesanz/python-machine-learning-course/commit/93c7542d4cf5ac5e19fb70226912d82618546206))
+* 💚 fix ci build pipeline ([`3507b7e`](https://github.com/Matesanz/python-machine-learning-course/commit/3507b7ecb0acc8cfe026a7f41c5dec8606378b49))
+
 ## v0.1.1 (2023-06-25)
 
 ### Other
