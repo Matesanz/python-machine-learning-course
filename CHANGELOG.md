@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2023-07-04)
+
+### Other
+
+* Merge pull request #8 from Matesanz:add-more-python-basics ([`66b1aad`](https://github.com/Matesanz/python-machine-learning-course/commit/66b1aadd2d9a1ea3333f246ad84ce133e6be013b))
+
 ## v0.1.6 (2023-07-04)
 
 ### Other

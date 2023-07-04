@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python_ml_course"
-version = "0.1.6"
+version = "0.2.0"
 description = "will teach you about python basics focused to Machine Learning"
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"
