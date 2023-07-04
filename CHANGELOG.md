@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.6 (2023-07-04)
+
+### Other
+
+* 🔧 remove toc integration in docs ([`4a528a5`](https://github.com/Matesanz/python-machine-learning-course/commit/4a528a5fed279efd05354d47a0297c39bbb30a0f))
+
 ## v0.1.5 (2023-07-04)
 
 ### Other
