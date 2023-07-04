@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.3 (2023-07-04)
+
+### Other
+
+* Merge pull request #5 from Matesanz:fix-pipeline ([`4099fa8`](https://github.com/Matesanz/python-machine-learning-course/commit/4099fa87ed7c2d61a2077ffe66e82dd2beab8e60))
+
 ## v0.1.2 (2023-07-04)
 
 ### Other
