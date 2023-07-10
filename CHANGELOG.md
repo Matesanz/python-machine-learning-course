@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.0 (2023-07-10)
+
+### Other
+
+* Merge pull request #11 from Matesanz:add-python-project-docs ([`c232bb3`](https://github.com/Matesanz/python-machine-learning-course/commit/c232bb3c1a2c4d48b886b997750c3aa8a9ad0532))
+* 🍱 add images for devcontainers ([`4ce96f4`](https://github.com/Matesanz/python-machine-learning-course/commit/4ce96f4b10b3e2b5587d34205c7887c6040c9dc0))
+* Merge pull request #10 from Matesanz:fix-folder-naming ([`c966e8e`](https://github.com/Matesanz/python-machine-learning-course/commit/c966e8e612dc7553b9140dcea59b44e3a286992f))
+* 🚚 rename python standard libraries folder ([`2467788`](https://github.com/Matesanz/python-machine-learning-course/commit/24677882730263afec19cf1320ea313df608ad0f))
+
 ## v0.3.0 (2023-07-04)
 
 ### Other
