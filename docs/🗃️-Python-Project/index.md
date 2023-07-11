@@ -146,7 +146,40 @@ The fastest way to quickly start developing is to build a **development environm
 
     ![devcontainer_python_rebuild](../assets/devcontainers/devcontainers_07.png)
 
-## 2. Starting a Poetry Project
+## 2. Create a Virtualenv using Pyenv
+
+Virtualenvs are a great way to isolate your Python project dependencies. They allow you to create an isolated environment for your project, which means that you can install packages without affecting the rest of your system. This is especially useful if you are working on multiple projects at the same time, or if you want to test out new packages without affecting your system.
+
+Some of the most common tools to create virtualenvs are:
+
+- [virtualenv](https://virtualenv.pypa.io/en/latest/)
+- [conda](https://docs.conda.io/en/latest/)
+- [pipenv](https://pipenv.pypa.io/en/latest/)
+- [pyenv](https://github.com/pyenv/pyenv)
+
+!!! info "How to install pyenv?"
+
+    Open a terminal (``Ctrl+Shift+` `` or `Terminal > New Terminal`) and use the following command:
+
+    ``` bash
+    curl https://pyenv.run | bash
+    ```
+
+1. Create a Virtualenv using Pyenv
+
+    ``` bash
+    pyenv virtualenv <python-version> my-virtualenv
+    ```
+    > **Note:** You can use any name for your virtualenv.
+
+2. Activate the Virtualenv
+
+    ``` bash
+    pyenv activate my-virtualenv
+    ```
+    > **Note:** You can deactivate the virtualenv using `pyenv deactivate`.
+
+## 3. Starting a Poetry Project
 
 Now that we have our development environment up and running, we can start creating our project. We will use **Poetry** to manage our project's dependencies and packaging. Poetry provides a simple and intuitive interface for managing dependencies, packaging, and virtual environments. It also offers a comprehensive set of features, such as dependency resolution, dependency isolation, and dependency locking. Poetry's user-friendly interface and powerful features make it an indispensable tool for Python developers.
 
@@ -168,7 +201,7 @@ Now that we have our development environment up and running, we can start creati
 
     1.  ℹ️ Remember to use a specific version (like `1.2.2`, `1.4.2` or `1.5.0`) by replacing `<version>` with the desired version.
 
-### 2.1. Creating a new project
+### 3.1. Creating a new project
 
 To create a new project, we can use the `new` command:
 
@@ -211,7 +244,7 @@ poetry new <project_name>
     build-backend = "poetry.core.masonry.api"
     ```
 
-### 2.2. Adding dependencies
+### 3.2. Adding dependencies
 
 To add a dependency, we can use the `add` command:
 
@@ -261,7 +294,7 @@ poetry add <dependency>
         pytest = "^6.2.2"
         ```
 
-### 2.3. Removing dependencies
+### 3.3. Removing dependencies
 
 To remove a dependency, we can use the `remove` command:
 
