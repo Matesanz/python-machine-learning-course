@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.4.1 (2023-07-11)
+
+### Other
+
+* Merge pull request #12 from Matesanz:install-pyenv ([`93aa797`](https://github.com/Matesanz/python-machine-learning-course/commit/93aa797cb09923f70b97e4c7e1e8f63dd30a36c8))
+* 🔧 add post-install rules ([`c033231`](https://github.com/Matesanz/python-machine-learning-course/commit/c033231bf8aa7779508ee166f852c0a4266d0d85))
+* 🔧 add pyenv to Dockerfile ([`84878aa`](https://github.com/Matesanz/python-machine-learning-course/commit/84878aa5c516056a7898861db51707361c7d7452))
+* 🔧 add omz to plugins ([`bbbcf64`](https://github.com/Matesanz/python-machine-learning-course/commit/bbbcf6452c92962ae11e1ba1c0609a2d5413f372))
+
 ## v0.4.0 (2023-07-10)
 
 ### Other
