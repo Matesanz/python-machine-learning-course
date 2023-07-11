@@ -883,30 +883,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-starting-a-poetry-project" class="md-nav__link">
-    2. Starting a Poetry Project
+  <a href="#2-create-a-virtualenv-using-pyenv" class="md-nav__link">
+    2. Create a Virtualenv using Pyenv
   </a>
   
-    <nav class="md-nav" aria-label="2. Starting a Poetry Project">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-starting-a-poetry-project" class="md-nav__link">
+    3. Starting a Poetry Project
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Starting a Poetry Project">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-creating-a-new-project" class="md-nav__link">
-    2.1. Creating a new project
+  <a href="#31-creating-a-new-project" class="md-nav__link">
+    3.1. Creating a new project
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-adding-dependencies" class="md-nav__link">
-    2.2. Adding dependencies
+  <a href="#32-adding-dependencies" class="md-nav__link">
+    3.2. Adding dependencies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-removing-dependencies" class="md-nav__link">
-    2.3. Removing dependencies
+  <a href="#33-removing-dependencies" class="md-nav__link">
+    3.3. Removing dependencies
   </a>
   
 </li>
@@ -1069,30 +1076,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-starting-a-poetry-project" class="md-nav__link">
-    2. Starting a Poetry Project
+  <a href="#2-create-a-virtualenv-using-pyenv" class="md-nav__link">
+    2. Create a Virtualenv using Pyenv
   </a>
   
-    <nav class="md-nav" aria-label="2. Starting a Poetry Project">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-starting-a-poetry-project" class="md-nav__link">
+    3. Starting a Poetry Project
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Starting a Poetry Project">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-creating-a-new-project" class="md-nav__link">
-    2.1. Creating a new project
+  <a href="#31-creating-a-new-project" class="md-nav__link">
+    3.1. Creating a new project
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-adding-dependencies" class="md-nav__link">
-    2.2. Adding dependencies
+  <a href="#32-adding-dependencies" class="md-nav__link">
+    3.2. Adding dependencies
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#23-removing-dependencies" class="md-nav__link">
-    2.3. Removing dependencies
+  <a href="#33-removing-dependencies" class="md-nav__link">
+    3.3. Removing dependencies
   </a>
   
 </li>
@@ -1261,95 +1275,128 @@
 <p><img alt="devcontainer_python_rebuild" src="../assets/devcontainers/devcontainers_07.png" /></p>
 </li>
 </ol>
-<h2 id="2-starting-a-poetry-project">2. Starting a Poetry Project</h2>
+<h2 id="2-create-a-virtualenv-using-pyenv">2. Create a Virtualenv using Pyenv</h2>
+<p>Virtualenvs are a great way to isolate your Python project dependencies. They allow you to create an isolated environment for your project, which means that you can install packages without affecting the rest of your system. This is especially useful if you are working on multiple projects at the same time, or if you want to test out new packages without affecting your system.</p>
+<p>Some of the most common tools to create virtualenvs are:</p>
+<ul>
+<li><a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a></li>
+<li><a href="https://docs.conda.io/en/latest/">conda</a></li>
+<li><a href="https://pipenv.pypa.io/en/latest/">pipenv</a></li>
+<li><a href="https://github.com/pyenv/pyenv">pyenv</a></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">How to install pyenv?</p>
+<p>Open a terminal (<code>Ctrl+Shift+`</code> or <code>Terminal &gt; New Terminal</code>) and use the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>https://pyenv.run<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</code></pre></div>
+</div>
+<ol>
+<li>
+<p>Create a Virtualenv using Pyenv</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pyenv<span class="w"> </span>virtualenv<span class="w"> </span>&lt;python-version&gt;<span class="w"> </span>my-virtualenv
+</code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> You can use any name for your virtualenv.</p>
+</blockquote>
+</li>
+<li>
+<p>Activate the Virtualenv</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pyenv<span class="w"> </span>activate<span class="w"> </span>my-virtualenv
+</code></pre></div>
+<blockquote>
+<p><strong>Note:</strong> You can deactivate the virtualenv using <code>pyenv deactivate</code>.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="3-starting-a-poetry-project">3. Starting a Poetry Project</h2>
 <p>Now that we have our development environment up and running, we can start creating our project. We will use <strong>Poetry</strong> to manage our project's dependencies and packaging. Poetry provides a simple and intuitive interface for managing dependencies, packaging, and virtual environments. It also offers a comprehensive set of features, such as dependency resolution, dependency isolation, and dependency locking. Poetry's user-friendly interface and powerful features make it an indispensable tool for Python developers.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avoid creating a virtualenv using Poetry</p>
 <p>Poetry creates a virtual environment for each project, but this is normally handled by other tools like <code>virtualenv</code> or <code>conda</code>. So, if you are using Poetry. In order to <strong>avoid Poetry creating a virtual environment</strong>, you can use the <code>virtualenvs.create</code> config:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>poetry<span class="w"> </span>config<span class="w"> </span>virtualenvs.create<span class="w"> </span><span class="nb">false</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>poetry<span class="w"> </span>config<span class="w"> </span>virtualenvs.create<span class="w"> </span><span class="nb">false</span>
 </code></pre></div>
 </div>
 <div class="admonition info">
 <p class="admonition-title">How to install poetry?</p>
 <p>Open a terminal (<code>Ctrl+Shift+`</code> or <code>Terminal &gt; New Terminal</code>) and use <code>pip</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">poetry</span><span class="o">==</span>&lt;version&gt;<span class="w"> </span><span class="c1"># (1)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">poetry</span><span class="o">==</span>&lt;version&gt;<span class="w"> </span><span class="c1"># (1)</span>
 </code></pre></div>
 <ol>
 <li>ℹ️ Remember to use a specific version (like <code>1.2.2</code>, <code>1.4.2</code> or <code>1.5.0</code>) by replacing <code>&lt;version&gt;</code> with the desired version.</li>
 </ol>
 </div>
-<h3 id="21-creating-a-new-project">2.1. Creating a new project</h3>
+<h3 id="31-creating-a-new-project">3.1. Creating a new project</h3>
 <p>To create a new project, we can use the <code>new</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>poetry<span class="w"> </span>new<span class="w"> </span>&lt;project_name&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>poetry<span class="w"> </span>new<span class="w"> </span>&lt;project_name&gt;
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">The default poetry project structure</p>
 <p>The <code>poetry new &lt;project_name&gt;</code> command will create a new project with the following structure:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;project_name&gt;
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├──<span class="w"> </span>pyproject.toml
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>├──<span class="w"> </span>README.md
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>├──<span class="w"> </span>&lt;project_name&gt;
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>│<span class="w">   </span>└──<span class="w"> </span>__init__.py
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>└──<span class="w"> </span>tests
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span>└──<span class="w"> </span>__init__.py
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>&lt;project_name&gt;
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>├──<span class="w"> </span>pyproject.toml
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>├──<span class="w"> </span>README.md
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>├──<span class="w"> </span>&lt;project_name&gt;
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>│<span class="w">   </span>└──<span class="w"> </span>__init__.py
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>└──<span class="w"> </span>tests
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">    </span>└──<span class="w"> </span>__init__.py
 </code></pre></div>
 </div>
 <div class="admonition info">
 <p class="admonition-title">The default <code>pyproject.toml</code> file</p>
 <p>The <code>pyproject.toml</code> file contains the project's metadata and dependencies and it will look like this:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">[tool.poetry]</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&lt;project_name&gt;&quot;</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0.1.0&quot;</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Andrés Matesanz &lt;matesanz.cuadrado@gmail.com&gt;&quot;</span><span class="p">]</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;README.md&quot;</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">packages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="n">include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&lt;project_name&gt;&quot;</span><span class="p">}]</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">[tool.poetry.dependencies]</span>
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.9&quot;</span>
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="k">[build-system]</span>
-<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;poetry-core&quot;</span><span class="p">]</span>
-<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry.core.masonry.api&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">[tool.poetry]</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&lt;project_name&gt;&quot;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;0.1.0&quot;</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;Andrés Matesanz &lt;matesanz.cuadrado@gmail.com&gt;&quot;</span><span class="p">]</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="n">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;README.md&quot;</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="n">packages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="n">include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&lt;project_name&gt;&quot;</span><span class="p">}]</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="k">[tool.poetry.dependencies]</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.9&quot;</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="k">[build-system]</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="n">requires</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;poetry-core&quot;</span><span class="p">]</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="n">build-backend</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;poetry.core.masonry.api&quot;</span>
 </code></pre></div>
 </div>
-<h3 id="22-adding-dependencies">2.2. Adding dependencies</h3>
+<h3 id="32-adding-dependencies">3.2. Adding dependencies</h3>
 <p>To add a dependency, we can use the <code>add</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>&lt;dependency&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>&lt;dependency&gt;
 </code></pre></div>
 <div class="admonition example">
 <p class="admonition-title">How to add a dependency: <code>requests</code></p>
 <p>This will add the dependency to the <code>pyproject.toml</code> file and install it in the virtual environment. For example, to add the <code>requests</code> library, we can use the following command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>requests
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>requests
 </code></pre></div>
 <p>This will add the following lines to the <code>pyproject.toml</code> file:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">[tool.poetry.dependencies]</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.9&quot;</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">requests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^2.25.1&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">[tool.poetry.dependencies]</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.9&quot;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">requests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^2.25.1&quot;</span>
 </code></pre></div>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Adding dependencies just for development</p>
 <p>If we want to add a dependency just for development, we can use the <code>--dev</code> flag:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>&lt;dependency&gt;<span class="w"> </span>--group<span class="w"> </span>dev
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>&lt;dependency&gt;<span class="w"> </span>--group<span class="w"> </span>dev
 </code></pre></div>
 <div class="admonition example">
 <p class="admonition-title">"How to add a development dependency: <code>pytest</code></p>
 <p>This will add the dependency to the <code>pyproject.toml</code> file under the <code>[tool.poetry.group.dev.dependencies]</code> section. For example, to add the <code>pytest</code> library, we can use the following command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>pytest<span class="w"> </span>--group<span class="w"> </span>dev
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>poetry<span class="w"> </span>add<span class="w"> </span>pytest<span class="w"> </span>--group<span class="w"> </span>dev
 </code></pre></div>
 <p>This will add the following lines to the <code>pyproject.toml</code> file:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">[tool.poetry.dependencies]</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.9&quot;</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">[tool.poetry.group.dev.dependencies]</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="n">pytest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^6.2.2&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">[tool.poetry.dependencies]</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^3.9&quot;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">[tool.poetry.group.dev.dependencies]</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">pytest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;^6.2.2&quot;</span>
 </code></pre></div>
 </div>
 </div>
-<h3 id="23-removing-dependencies">2.3. Removing dependencies</h3>
+<h3 id="33-removing-dependencies">3.3. Removing dependencies</h3>
 <p>To remove a dependency, we can use the <code>remove</code> command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>poetry<span class="w"> </span>remove<span class="w"> </span>&lt;dependency&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>poetry<span class="w"> </span>remove<span class="w"> </span>&lt;dependency&gt;
 </code></pre></div>
 
 
