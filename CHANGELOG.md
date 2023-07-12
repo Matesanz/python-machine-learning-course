@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.7.0 (2023-07-12)
+
+### Other
+
+* Merge pull request #15 from Matesanz:add-exercises ([`d9e769e`](https://github.com/Matesanz/python-machine-learning-course/commit/d9e769e4871818830bf739330826b7736550c136))
+
 ## v0.6.0 (2023-07-12)
 
 ### Other
