@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.5.0 (2023-07-12)
+
+### Other
+
+* Merge pull request #13 from Matesanz:add-numpy-tutorial ([`c3d47c2`](https://github.com/Matesanz/python-machine-learning-course/commit/c3d47c29703117b96298937502b15c85402d0f07))
+* 🔧 add copilot to devcontainer features ([`0c7032c`](https://github.com/Matesanz/python-machine-learning-course/commit/0c7032c23b9e149bb36e1741bdd9476de4dca662))
+* ➕ add numpy to dependencies ([`b558203`](https://github.com/Matesanz/python-machine-learning-course/commit/b558203b348ac3353d3b882097d387821cf9f7af))
+
 ## v0.4.1 (2023-07-11)
 
 ### Other
