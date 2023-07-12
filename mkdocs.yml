@@ -10,8 +10,8 @@ theme:
     - content.code.annotate
     - navigation.tracking
     - navigation.tabs
-    - navigation.sections
-    - navigation.expand
+    - navigation.prune
+    - navigation.indexes
 
 plugins:
   - search
