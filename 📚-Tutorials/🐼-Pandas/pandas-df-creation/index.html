@@ -13,7 +13,7 @@
     
     
       
-        <title>🎓 The Dataclasses Module - 🐍 Python for Machine Learning Course</title>
+        <title>🐼 Creating a Pandas DataFrame - 🐍 Python for Machine Learning Course</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-dataclasses-module" class="md-skip">
+        <a href="#creating-a-pandas-dataframe" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🎓 The Dataclasses Module
+              🐼 Creating a Pandas DataFrame
             
           </span>
         </div>
@@ -701,12 +701,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       
       
@@ -739,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%F0%9F%90%BC-Pandas/pandas-basics/" class="md-nav__link">
+      <a href="../pandas-basics/" class="md-nav__link">
         🐼 Pandas Basics
       </a>
     </li>
@@ -753,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%F0%9F%90%BC-Pandas/pandas-df-cleaning/" class="md-nav__link">
+      <a href="../pandas-df-cleaning/" class="md-nav__link">
         🐼 Pandas Data Cleaning
       </a>
     </li>
@@ -765,11 +767,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../%F0%9F%90%BC-Pandas/pandas-df-creation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          🐼 Creating a Pandas DataFrame
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         🐼 Creating a Pandas DataFrame
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-importing-the-pandas-library" class="md-nav__link">
+    1. Importing the Pandas library
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-creating-a-dataframe-from-a-dictionary" class="md-nav__link">
+    2. Creating a DataFrame from a Dictionary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-creating-a-dataframe-from-a-list-of-dictionaries" class="md-nav__link">
+    3. Creating a DataFrame from a List of Dictionaries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-creating-a-dataframe-from-a-list-of-lists" class="md-nav__link">
+    4. Creating a DataFrame from a List of Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-creating-a-dataframe-from-a-numpy-array" class="md-nav__link">
+    5. Creating a DataFrame from a NumPy Array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-creating-a-dataframe-from-a-csv-file" class="md-nav__link">
+    6. Creating a DataFrame from a CSV file
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Creating a DataFrame from a CSV file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-save-dataframe-to-csv" class="md-nav__link">
+    6.1 Save DataFrame to CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-read-csv-to-dataframe" class="md-nav__link">
+    6.2 Read CSV to DataFrame
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -781,7 +879,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../%F0%9F%90%BC-Pandas/pandas-df-indexing/" class="md-nav__link">
+      <a href="../pandas-df-indexing/" class="md-nav__link">
         🐼 Pandas Data Indexing
       </a>
     </li>
@@ -800,14 +898,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
       
       
@@ -833,7 +929,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">📑 The Standard Library</a>
+          <a href="../../%F0%9F%93%91-The-Standard-Library/">📑 The Standard Library</a>
           
             <label for="__nav_3_3">
               <span class="md-nav__icon md-icon"></span>
@@ -856,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../collections/" class="md-nav__link">
+      <a href="../../%F0%9F%93%91-The-Standard-Library/collections/" class="md-nav__link">
         👪 The Collections Module
       </a>
     </li>
@@ -868,73 +964,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          🎓 The Dataclasses Module
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../%F0%9F%93%91-The-Standard-Library/dataclasses/" class="md-nav__link">
         🎓 The Dataclasses Module
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-creating-a-data-class" class="md-nav__link">
-    1. Creating a Data Class
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-default-field-values" class="md-nav__link">
-    2. Default Field Values
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-adding-methods" class="md-nav__link">
-    3. Adding Methods
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-immutable-data-classes" class="md-nav__link">
-    4. Immutable Data Classes
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -946,7 +980,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../datetime-and-time/" class="md-nav__link">
+      <a href="../../%F0%9F%93%91-The-Standard-Library/datetime-and-time/" class="md-nav__link">
         📅 Datetime and Time
       </a>
     </li>
@@ -960,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../itertools/" class="md-nav__link">
+      <a href="../../%F0%9F%93%91-The-Standard-Library/itertools/" class="md-nav__link">
         🌪️ Itertools
       </a>
     </li>
@@ -974,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../os-and-sys/" class="md-nav__link">
+      <a href="../../%F0%9F%93%91-The-Standard-Library/os-and-sys/" class="md-nav__link">
         💻 The OS and SYS modules
       </a>
     </li>
@@ -988,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pathlib/" class="md-nav__link">
+      <a href="../../%F0%9F%93%91-The-Standard-Library/pathlib/" class="md-nav__link">
         🚠 The Pathlib Module
       </a>
     </li>
@@ -1295,30 +1329,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-creating-a-data-class" class="md-nav__link">
-    1. Creating a Data Class
+  <a href="#1-importing-the-pandas-library" class="md-nav__link">
+    1. Importing the Pandas library
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-default-field-values" class="md-nav__link">
-    2. Default Field Values
+  <a href="#2-creating-a-dataframe-from-a-dictionary" class="md-nav__link">
+    2. Creating a DataFrame from a Dictionary
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-adding-methods" class="md-nav__link">
-    3. Adding Methods
+  <a href="#3-creating-a-dataframe-from-a-list-of-dictionaries" class="md-nav__link">
+    3. Creating a DataFrame from a List of Dictionaries
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-immutable-data-classes" class="md-nav__link">
-    4. Immutable Data Classes
+  <a href="#4-creating-a-dataframe-from-a-list-of-lists" class="md-nav__link">
+    4. Creating a DataFrame from a List of Lists
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-creating-a-dataframe-from-a-numpy-array" class="md-nav__link">
+    5. Creating a DataFrame from a NumPy Array
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-creating-a-dataframe-from-a-csv-file" class="md-nav__link">
+    6. Creating a DataFrame from a CSV file
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Creating a DataFrame from a CSV file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-save-dataframe-to-csv" class="md-nav__link">
+    6.1 Save DataFrame to CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-read-csv-to-dataframe" class="md-nav__link">
+    6.2 Read CSV to DataFrame
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1336,7 +1404,7 @@
                 
                   
 
-  <a href="https://github.com/Matesanz/python_machine_learning_course/edit/master/docs/📚-Tutorials/📑-The-Standard-Library/dataclasses.ipynb" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/Matesanz/python_machine_learning_course/edit/master/docs/📚-Tutorials/🐼-Pandas/pandas-df-creation.ipynb" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
@@ -2379,19 +2447,8 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="the-dataclasses-module">&#127891; The Dataclasses Module<a class="anchor-link" href="#the-dataclasses-module">&#182;</a></h1><p><code>dataclasses</code> is a module for creating classes which are primarily used to store data. These classes, called data classes, have automatically added special methods, including <code>__init__()</code>, <code>__repr__()</code>, and <code>__eq__()</code>.</p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="1-creating-a-data-class">1. Creating a Data Class<a class="anchor-link" href="#1-creating-a-data-class">&#182;</a></h2><p>Here is how you can define a simple data class:</p>
+<h1 id="creating-a-pandas-dataframe">&#128060; Creating a Pandas DataFrame<a class="anchor-link" href="#creating-a-pandas-dataframe">&#182;</a></h1><p>Pandas DataFrame is a two-dimensional size-mutable, heterogeneous tabular data structure that allows you to manipulate and analyze data. This tutorial will guide you on how to create a DataFrame in several ways.</p>
+<h2 id="1-importing-the-pandas-library">1. Importing the Pandas library<a class="anchor-link" href="#1-importing-the-pandas-library">&#182;</a></h2><p>Before creating a DataFrame, you need to import the pandas library. This is typically imported under the <code>pd</code> alias.</p>
 
 </div>
 </div>
@@ -2417,19 +2474,9 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
-
-<span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
-<div id="cell-1" class="clipboard-copy-txt">from dataclasses import dataclass
-
-@dataclass
-class Point:
-    x: int
-    y: int</div>
+<div id="cell-1" class="clipboard-copy-txt">import pandas as pd</div>
     
         </div>
     </div>
@@ -2445,7 +2492,7 @@ class Point:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This <code>Point</code> class has two fields, <code>x</code> and <code>y</code>, both of type <code>int</code>. The <code>@dataclass</code> decorator automatically adds a number of special methods to the class, including a constructor function (<code>__init__()</code>) to initialize the data attributes:</p>
+<h2 id="2-creating-a-dataframe-from-a-dictionary">2. Creating a DataFrame from a Dictionary<a class="anchor-link" href="#2-creating-a-dataframe-from-a-dictionary">&#182;</a></h2><p>One common way to create a DataFrame is from a dictionary of equal-length lists or NumPy arrays.</p>
 
 </div>
 </div>
@@ -2471,11 +2518,25 @@ class Point:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>  <span class="c1"># Outputs: Point(x=1, y=2)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;Linda&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span>
+    <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;New York&#39;</span><span class="p">,</span> <span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlin&#39;</span><span class="p">,</span> <span class="s1">&#39;London&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="n">df</span>
 </pre></div>
-<div id="cell-2" class="clipboard-copy-txt">p = Point(1, 2)
-print(p)  # Outputs: Point(x=1, y=2)</div>
+<div id="cell-2" class="clipboard-copy-txt">data = {
+    'name': ['John', 'Anna', 'Peter', 'Linda'],
+    'age': [28, 24, 35, 32],
+    'city': ['New York', 'Paris', 'Berlin', 'London']
+}
+
+df = pd.DataFrame(data)
+
+df</div>
     
         </div>
     </div>
@@ -2493,13 +2554,64 @@ print(p)  # Outputs: Point(x=1, y=2)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Point(x=1, y=2)
-</pre>
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>age</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>John</td>
+      <td>28</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Anna</td>
+      <td>24</td>
+      <td>Paris</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Peter</td>
+      <td>35</td>
+      <td>Berlin</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Linda</td>
+      <td>32</td>
+      <td>London</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -2514,13 +2626,25 @@ print(p)  # Outputs: Point(x=1, y=2)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="2-default-field-values">2. Default Field Values<a class="anchor-link" href="#2-default-field-values">&#182;</a></h2><p>You can specify default values for fields:</p>
+<p>The keys of the dictionary become the DataFrame column names.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="3-creating-a-dataframe-from-a-list-of-dictionaries">3. Creating a DataFrame from a List of Dictionaries<a class="anchor-link" href="#3-creating-a-dataframe-from-a-list-of-dictionaries">&#182;</a></h2><p>You can also create a DataFrame from a list of dictionaries.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2540,24 +2664,106 @@ print(p)  # Outputs: Point(x=1, y=2)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="s1">&#39;New York&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="s1">&#39;Paris&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">35</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="s1">&#39;Berlin&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Linda&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">:</span> <span class="s1">&#39;London&#39;</span><span class="p">}</span>
+<span class="p">]</span>
 
-<span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="n">df</span>
 </pre></div>
-<div id="cell-3" class="clipboard-copy-txt">from dataclasses import dataclass
+<div id="cell-3" class="clipboard-copy-txt">data = [
+    {'name': 'John', 'age': 28, 'city': 'New York'},
+    {'name': 'Anna', 'age': 24, 'city': 'Paris'},
+    {'name': 'Peter', 'age': 35, 'city': 'Berlin'},
+    {'name': 'Linda', 'age': 32, 'city': 'London'}
+]
 
-@dataclass
-class Point:
-    x: int = 0
-    y: int = 0</div>
+df = pd.DataFrame(data)
+
+df</div>
     
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>age</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>John</td>
+      <td>28</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Anna</td>
+      <td>24</td>
+      <td>Paris</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Peter</td>
+      <td>35</td>
+      <td>Berlin</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Linda</td>
+      <td>32</td>
+      <td>London</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -2568,7 +2774,19 @@ class Point:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>When you create an instance of this class, you can omit values for any of the fields to use their default values:</p>
+<p>Each item in the list corresponds to a row in the DataFrame.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="4-creating-a-dataframe-from-a-list-of-lists">4. Creating a DataFrame from a List of Lists<a class="anchor-link" href="#4-creating-a-dataframe-from-a-list-of-lists">&#182;</a></h2><p>You can also create a DataFrame from a list of lists, where each sublist is a row in the DataFrame.</p>
 
 </div>
 </div>
@@ -2594,11 +2812,27 @@ class Point:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>  <span class="c1"># Outputs: Point(x=0, y=0)</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="s1">&#39;New York&#39;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="s1">&#39;Paris&#39;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="s1">&#39;Berlin&#39;</span><span class="p">],</span>
+    <span class="p">[</span><span class="s1">&#39;Linda&#39;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="s1">&#39;London&#39;</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">])</span>
+
+<span class="n">df</span>
 </pre></div>
-<div id="cell-4" class="clipboard-copy-txt">p = Point()
-print(p)  # Outputs: Point(x=0, y=0)</div>
+<div id="cell-4" class="clipboard-copy-txt">data = [
+    ['John', 28, 'New York'],
+    ['Anna', 24, 'Paris'],
+    ['Peter', 35, 'Berlin'],
+    ['Linda', 32, 'London']
+]
+
+df = pd.DataFrame(data, columns=['name', 'age', 'city'])
+
+df</div>
     
         </div>
     </div>
@@ -2616,13 +2850,64 @@ print(p)  # Outputs: Point(x=0, y=0)</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Point(x=0, y=0)
-</pre>
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>name</th>
+      <th>age</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>John</td>
+      <td>28</td>
+      <td>New York</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Anna</td>
+      <td>24</td>
+      <td>Paris</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Peter</td>
+      <td>35</td>
+      <td>Berlin</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Linda</td>
+      <td>32</td>
+      <td>London</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -2637,13 +2922,25 @@ print(p)  # Outputs: Point(x=0, y=0)</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3-adding-methods">3. Adding Methods<a class="anchor-link" href="#3-adding-methods">&#182;</a></h2><p>Like any other classes, data classes can have methods:</p>
+<p>Here, the <code>columns</code> parameter is used to specify the column names.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="5-creating-a-dataframe-from-a-numpy-array">5. Creating a DataFrame from a NumPy Array<a class="anchor-link" href="#5-creating-a-dataframe-from-a-numpy-array">&#182;</a></h2><p>If you have numerical data, it might be stored as a NumPy array. You can also create a DataFrame from a NumPy array.</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2663,30 +2960,88 @@ print(p)  # Outputs: Point(x=0, y=0)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="nd">@dataclass</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]])</span>
 
-    <span class="k">def</span> <span class="nf">distance_from_origin</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">**</span> <span class="mf">0.5</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">])</span>
+
+<span class="n">df</span>
 </pre></div>
-<div id="cell-5" class="clipboard-copy-txt">from dataclasses import dataclass
+<div id="cell-5" class="clipboard-copy-txt">import numpy as np
 
-@dataclass
-class Point:
-    x: int
-    y: int
+data = np.array([[1, 2, 3], [4, 5, 6]])
 
-    def distance_from_origin(self):
-        return (self.x ** 2 + self.y ** 2) ** 0.5</div>
+df = pd.DataFrame(data, columns=['A', 'B', 'C'])
+
+df</div>
     
         </div>
     </div>
 
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -2697,13 +3052,13 @@ class Point:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>You can call this method like any other method:</p>
-
+<h2 id="6-creating-a-dataframe-from-a-csv-file">6. Creating a DataFrame from a CSV file<a class="anchor-link" href="#6-creating-a-dataframe-from-a-csv-file">&#182;</a></h2><p>Pandas provides several methods to create a DataFrame, one of the most common is from a CSV file using the <code>pd.read_csv()</code> function.</p>
+<h3 id="61-save-dataframe-to-csv">6.1 Save DataFrame to CSV<a class="anchor-link" href="#61-save-dataframe-to-csv">&#182;</a></h3>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2723,39 +3078,14 @@ class Point:
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">distance_from_origin</span><span class="p">())</span>  <span class="c1"># Outputs: 5.0</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
-<div id="cell-6" class="clipboard-copy-txt">p = Point(3, 4)
-print(p.distance_from_origin())  # Outputs: 5.0</div>
+<div id="cell-6" class="clipboard-copy-txt">df.to_csv('data.csv', index=False)</div>
     
         </div>
     </div>
 
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5.0
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -2766,13 +3096,12 @@ print(p.distance_from_origin())  # Outputs: 5.0</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="4-immutable-data-classes">4. Immutable Data Classes<a class="anchor-link" href="#4-immutable-data-classes">&#182;</a></h2><p>You can make a data class immutable (i.e., read-only) by setting the <code>frozen</code> parameter of the <code>@dataclass</code> decorator to <code>True</code>:</p>
-
+<h3 id="62-read-csv-to-dataframe">6.2 Read CSV to DataFrame<a class="anchor-link" href="#62-read-csv-to-dataframe">&#182;</a></h3>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -2792,65 +3121,11 @@ print(p.distance_from_origin())  # Outputs: 5.0</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
-
-<span class="nd">@dataclass</span><span class="p">(</span><span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
-    <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
-    <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span>
 </pre></div>
-<div id="cell-7" class="clipboard-copy-txt">from dataclasses import dataclass
-
-@dataclass(frozen=True)
-class Point:
-    x: int
-    y: int</div>
-    
-        </div>
-    </div>
-
-</div>
-</div>
-
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This will prevent modifying the fields of instances of the class:</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-        
-        
-        <div class="CodeMirror cm-s-jupyter">
-        <div class="zeroclipboard-container">
-            <clipboard-copy for="cell-8">
-            <div>
-                <span class="notice" hidden>Copied!</span>
-                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 16 16" version="1.1"  data-view-component="true" class="clipboard-copy-icon">
-                    <path fill="currentColor" fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path>
-                    <path fill="currentColor" fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-                </svg>
-                </div>
-            </clipboard-copy>
-        </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>  <span class="c1"># Raises dataclasses.FrozenInstanceError</span>
-</pre></div>
-<div id="cell-8" class="clipboard-copy-txt">p = Point(1, 2)
-p.x = 3  # Raises dataclasses.FrozenInstanceError</div>
+<div id="cell-7" class="clipboard-copy-txt">df = pd.read_csv('data.csv')
+df</div>
     
         </div>
     </div>
@@ -2868,21 +3143,52 @@ p.x = 3  # Raises dataclasses.FrozenInstanceError</div>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FrozenInstanceError</span>                       Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[8], line 2</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> p = Point(1, 2)
-<span class="ansi-green-fg">----&gt; 2</span> p.x = 3  # Raises dataclasses.FrozenInstanceError
 
-File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-cyan-fg">__setattr__</span><span class="ansi-blue-fg">(self, name, value)</span>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ansi-red-fg">FrozenInstanceError</span>: cannot assign to field &#39;x&#39;</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -2897,7 +3203,19 @@ File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-c
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Data classes make it easier to create classes that are mainly used to store data. They automatically generate special methods that are commonly used in such classes, reducing the boilerplate involved.</p>
+<p>Replace <code>'data.csv'</code> with the path to the CSV file you want to read/write. If the CSV file is in the same directory as your Python script or Jupyter notebook, you only need to provide the name of the file. If it's located elsewhere, you need to provide the full path to the file.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This tutorial has covered several ways to create a DataFrame, but these are by no means the only ways. Other methods exist, such as creating a DataFrame from a SQL query, but those are beyond the scope of this basic tutorial. The method you choose will depend on the structure and format of your data.</p>
 
 </div>
 </div>
@@ -2926,7 +3244,7 @@ File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-c
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../collections/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 👪 The Collections Module" rel="prev">
+        <a href="../pandas-df-cleaning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🐼 Pandas Data Cleaning" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2935,20 +3253,20 @@ File <span class="ansi-green-fg">&lt;string&gt;:4</span>, in <span class="ansi-c
               <span class="md-footer__direction">
                 Previous
               </span>
-              👪 The Collections Module
+              🐼 Pandas Data Cleaning
             </div>
           </div>
         </a>
       
       
         
-        <a href="../datetime-and-time/" class="md-footer__link md-footer__link--next" aria-label="Next: 📅 Datetime and Time" rel="next">
+        <a href="../pandas-df-indexing/" class="md-footer__link md-footer__link--next" aria-label="Next: 🐼 Pandas Data Indexing" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              📅 Datetime and Time
+              🐼 Pandas Data Indexing
             </div>
           </div>
           <div class="md-footer__button md-icon">
