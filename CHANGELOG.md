@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.6.0 (2023-07-12)
+
+### Other
+
+* Merge pull request #14 from Matesanz:add-pandas-tutorials ([`7a25f73`](https://github.com/Matesanz/python-machine-learning-course/commit/7a25f73e054c906cfbeeaa5d675a26ebaa8daedc))
+* ➕ add pandas to dependencies ([`00c737c`](https://github.com/Matesanz/python-machine-learning-course/commit/00c737cc44e377235d7d14879533e963cbb19a19))
+* 🔧 avoid expanding sections in mkdocs ([`d2b2127`](https://github.com/Matesanz/python-machine-learning-course/commit/d2b21271cce1857fe8a48ff5afb3956bea0925ed))
+
 ## v0.5.0 (2023-07-12)
 
 ### Other
