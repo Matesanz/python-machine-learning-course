@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.8.0 (2023-07-12)
+
+### Other
+
+* Merge pull request #16 from Matesanz:add-pandas-exercises ([`d3b12b7`](https://github.com/Matesanz/python-machine-learning-course/commit/d3b12b7de96199ac6cf3fe445c6c7c1ae9a54e4d))
+
 ## v0.7.0 (2023-07-12)
 
 ### Other
