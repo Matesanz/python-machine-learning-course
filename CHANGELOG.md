@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.9.0 (2023-07-19)
+
+### Other
+
+* Merge pull request #18 from Matesanz:fix-semantic-release-ci-build ([`8a15bc1`](https://github.com/Matesanz/python-machine-learning-course/commit/8a15bc1905096d7043993862d141126907d3f3fa))
+* 💚 pin python semantic release in build ([`38f526a`](https://github.com/Matesanz/python-machine-learning-course/commit/38f526a40f9141e85446258e78676fbe1335615a))
+* Merge pull request #17 from Matesanz:add-plotting-tutorials ([`6a54a1b`](https://github.com/Matesanz/python-machine-learning-course/commit/6a54a1b140e38bad4aae2ec368bf0df75fd81076))
+* ➕ add matplotlib and seaborn ([`b4cdc88`](https://github.com/Matesanz/python-machine-learning-course/commit/b4cdc88633c4dbe5f72f46c059f6245596fa7735))
+
 ## v0.8.0 (2023-07-12)
 
 ### Other
