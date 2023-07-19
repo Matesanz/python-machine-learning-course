@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.9.1 (2023-07-19)
+
+### Other
+
+* Merge pull request #19 from Matesanz:fix-plotting-typos ([`71b4661`](https://github.com/Matesanz/python-machine-learning-course/commit/71b4661b1ecb48ce52620b2658284746deb9a41e))
+
 ## v0.9.0 (2023-07-19)
 
 ### Other
