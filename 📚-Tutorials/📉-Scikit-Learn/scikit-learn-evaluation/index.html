@@ -2890,7 +2890,7 @@ Licensed under the Apache License, Version 2.0.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -2940,7 +2940,7 @@ y_pred = (y_pred >= 0.5).astype(int)</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="2-model-evaluation-metrics">2. Model Evaluation Metrics<a class="anchor-link" href="#2-model-evaluation-metrics">&#182;</a></h2><p>Imagine a <strong>box</strong> filled with <strong>balls</strong>: some are <strong>blue</strong>, and others are <strong>not-blue</strong>. Your task is to identify all the blue balls without mistakenly picking the not-blue ones. Here's how various metrics would help you assess your performance:</p>
-<p><img src="/assets/metrics/metrics_00.jpg" alt="balls_metrics"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_00.jpg?raw=True" alt="balls_metrics"></p>
 
 </div>
 </div>
@@ -2963,7 +2963,7 @@ y_pred = (y_pred >= 0.5).astype(int)</div>
 <li><p><strong>False Negative (FN):</strong> The number of times the item was incorrectly identified as not blue. This means the item is actually blue, but the model/test failed to recognize it and predicted it as not blue.</p>
 </li>
 </ul>
-<p><img src="/assets/metrics/metrics_01.jpg" alt="balls_metrics"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_01.jpg?raw=True" alt="balls_metrics"></p>
 
 </div>
 </div>
@@ -2974,7 +2974,7 @@ y_pred = (y_pred >= 0.5).astype(int)</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3060,7 +3060,7 @@ class="
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="22-accuracy">2.2 Accuracy<a class="anchor-link" href="#22-accuracy">&#182;</a></h3><p>Accuracy is the most straightforward metric and represents <strong>the percentage of correct predictions out of the total</strong> predictions made by the model. Suppose out of 5 attempts, you correctly identify the color 4 times (whether it's blue or not-blue), then your accuracy is 80%. <strong>It's about how often you're right in general.</strong></p>
-<p><img src="/assets/metrics/metrics_02.jpg" alt="accuracy"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_02.jpg?raw=True" alt="accuracy"></p>
 
 </div>
 </div>
@@ -3071,7 +3071,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3136,7 +3136,7 @@ print(f"Accuracy: {accuracy:.2f}")</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="23-precision">2.3 Precision<a class="anchor-link" href="#23-precision">&#182;</a></h3><p>Precision is proportion of <strong>true positive predictions out of all positive predictions</strong> made by the model. It measures the model's ability to avoid false positives Let's say when you guess a ball is blue, you want to be sure it really is blue. If you pick 3 balls thinking they're blue and only 2 of them are actually blue, your precision is 2/3 or about 67%. <strong>It tells how often you're right when you claim a ball is blue.</strong></p>
-<p><img src="/assets/metrics/metrics_03.jpg" alt="precision"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_03.jpg?raw=True" alt="precision"></p>
 
 </div>
 </div>
@@ -3147,7 +3147,7 @@ print(f"Accuracy: {accuracy:.2f}")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3212,7 +3212,7 @@ print(f"Precision: {precision:.2f}")</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="24-recall-sensitivity">2.4 Recall (Sensitivity)<a class="anchor-link" href="#24-recall-sensitivity">&#182;</a></h3><p>The proportion of <strong>true positive predictions out of all actual positive samples</strong> in the dataset. It measures the model's ability to find all positive samples. Now, think of the blue balls as "important items" you don’t want to overlook. If there are 3 blue balls in the box and you only identify 2 as blue, then your recall is 2/3 or about 70%. <strong>This metric shows how many of the actual blue balls you successfully spotted.</strong></p>
-<p><img src="/assets/metrics/metrics_04.jpg" alt="recall"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_04.jpg?raw=True" alt="recall"></p>
 
 </div>
 </div>
@@ -3223,7 +3223,7 @@ print(f"Precision: {precision:.2f}")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3288,7 +3288,7 @@ print(f"Recall: {recall:.2f}")</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="25-specificity">2.5 <strong>Specificity</strong><a class="anchor-link" href="#25-specificity">&#182;</a></h3><p>The proportion of <strong>true negative predictions out of all actual negative samples</strong> in the dataset. It measures the model's ability to find all negative samples. Shifting focus to the not-blue balls: If there are 2 not-blue balls and you correctly identified 1 of them when searching for blue ones, your specificity is 50%. <strong>It highlights how good you are at ignoring the not-blue distractions.</strong></p>
-<p><img src="/assets/metrics/metrics_05.jpg" alt="Specificity"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_05.jpg?raw=True?raw=True" alt="Specificity"></p>
 
 </div>
 </div>
@@ -3299,7 +3299,7 @@ print(f"Recall: {recall:.2f}")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3360,7 +3360,7 @@ print(f"Specifity: {specificity:.2f}")</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="26-f1-score">2.6 F1 Score<a class="anchor-link" href="#26-f1-score">&#182;</a></h3><p>The F1 score is the <strong>harmonic mean of precision</strong> (a ball is truly blue when you pick it) and <strong>recall</strong> (not missing any blue balls), providing a balanced measure between the two. It is useful when you need to consider both false positives and false negatives.</p>
-<p><img src="/assets/metrics/metrics_06.jpg" alt="f1_score"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_06.jpg?raw=True" alt="f1_score"></p>
 
 </div>
 </div>
@@ -3371,7 +3371,7 @@ print(f"Specifity: {specificity:.2f}")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
@@ -3438,7 +3438,7 @@ print(f"F1 Score: {f1:.2f}")</div>
 <h3 id="27-roc-curve-and-auc">2.7 ROC Curve and AUC<a class="anchor-link" href="#27-roc-curve-and-auc">&#182;</a></h3><p>Imagine the model has a "dial" you can adjust. If you turn the dial up (increasing sensitivity), the model becomes more aggressive in predicting that balls are blue. Turn it down, and the model becomes more cautious, predicting fewer balls as blue.</p>
 <p><strong>Trade-offs</strong></p>
 <p>But there's a catch! As you become <strong>more aggressive</strong> in predicting blue balls (higher sensitivity), you'll likely <strong>pick up more actual blue balls</strong> (true positives), but you'll also probably <strong>pick up more not-blue balls by mistake</strong> (false positives). Conversely, being <strong>more cautious</strong> (lower sensitivity) means you'll probably <strong>miss out</strong> on identifying some <strong>blue balls</strong> (false negatives), but you'll also have <strong>fewer mistaken identifications of not-blue balls</strong>.</p>
-<p><img src="/assets/metrics/metrics_07.jpg" alt="threshold"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_07.jpg?raw=True" alt="threshold"></p>
 
 </div>
 </div>
@@ -3470,7 +3470,7 @@ print(f"F1 Score: {f1:.2f}")</div>
 </ul>
 <p><strong>The Area Under the Curve (AUC)</strong></p>
 <p>The Area Under the ROC Curve (AUC-ROC) is a <strong>single scalar value</strong> that represents the area under the ROC curve. It provides a measure of the<strong> model's ability to distinguish between classes</strong>.</p>
-<p><img src="/assets/metrics/metrics_08.jpg" alt="auc"></p>
+<p><img src="https://github.com/Matesanz/python-machine-learning-course/blob/main/docs/assets/metrics/metrics_08.jpg?raw=True" alt="auc"></p>
 
 </div>
 </div>
@@ -3481,7 +3481,7 @@ print(f"F1 Score: {f1:.2f}")</div>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
