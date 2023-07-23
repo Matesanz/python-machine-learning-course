@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v0.10.1 (2023-07-23)
+
+### Other
+
+* Merge pull request #21 from Matesanz:fix-links-add-license-clean-indexes ([`abf6dff`](https://github.com/Matesanz/python-machine-learning-course/commit/abf6dffdbb21ead0fac4ec3b4f4bf1865cf3d3ba))
+* 📄 add Creative Commons License ([`250b395`](https://github.com/Matesanz/python-machine-learning-course/commit/250b3954157dc9a94072aa5402c14bca28ce5b94))
+
 ## v0.10.0 (2023-07-23)
 
 ### Other
