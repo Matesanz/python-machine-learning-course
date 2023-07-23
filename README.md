@@ -2,31 +2,30 @@
 
 ## 🪧 Description
 
-will teach you about python basics focused to Machine Learning
+This project is a doc-based repository full of markdowns and jupyter notebooks rendered using [mkdocs](https://www.mkdocs.org/) [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) and [mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter) that will **teach you about python basics focused to Machine Learning** 😎
+
+- [x] Python Basics
+- [x] Set up a python project
+- [x] Numpy
+- [x] Pandas
+- [x] Matplotlib and Seaborn
+- [x] Scikit-Learn
+
+👇 Web Link 👇
+
+https://matesanz.github.io/python-machine-learning-course/
 
 ## 🗃️ Table of Contents
 
-- [👋 python_machine_learning_course](#-python_ml_course)
+- [👋 python\_machine\_learning\_course](#-python_machine_learning_course)
   - [🪧 Description](#-description)
   - [🗃️ Table of Contents](#️-table-of-contents)
-  - [🚀 Basic Usage](#-basic-usage)
     - [📚 Documentation](#-documentation)
-  - [📦 Installation](#-installation)
-    - [🐍 Using Pip](#-using-pip)
-    - [🌹 Using Poetry](#-using-poetry)
-  - [🏗️ Development](#️-development)
+  - [🏗️ Contributing](#️-contributing)
     - [🐋 Devcontainer Environment](#-devcontainer-environment)
     - [🧑‍⚖️ Pre-Commit](#️-pre-commit)
-    - [🌹 Poetry](#-poetry)
-      - [📦 Installing Poetry](#-installing-poetry)
-      - [ℹ️ Poetry Basic Usage](#ℹ️-poetry-basic-usage)
   - [🙋 Author](#-author)
 
-## 🚀 Basic Usage
-
-```python
-import python_ml_course
-```
 
 ### 📚 Documentation
 
@@ -38,24 +37,9 @@ mkdocs serve
 
 👉 Then go to http://localhost:8000
 
-## 📦 Installation
+## 🏗️ Contributing
 
-### 🐍 Using Pip
-
-```console
-pip install .
-```
-
-### 🌹 Using Poetry
-
-```console
-poetry config virtualenvs.create false
-poetry install
-```
-
-💡 To install poetry see: [installing poetry section](#-installing-poetry)
-
-## 🏗️ Development
+Fastest way to contribute is to use the [devcontainer environment](#-devcontainer-environment) and the [pre-commit](#-pre-commit) hooks.
 
 ### 🐋 Devcontainer Environment
 
@@ -93,52 +77,6 @@ pre-commit install
 ```
 
 This will install a bunch of hooks that will check staged files (only the `*.py` staged files) to check that they stick to black, autopep8, isort and some other standards.
-
-### 🌹 Poetry
-
-#### 📦 Installing Poetry
-
-This project uses Poetry as dependency manager. It needs to be installed in our computer to be used.
-To install Poetry in Linux, macOS or Windows we need to execute the next line:
-
-Option 1:
-
-```bash
-curl -sSL https://install.python-poetry.org | python3 -
-```
-
-Option 2:
-
-```bash
-pip install poetry
-```
-
-To check if Poetry is working fine execute:
-
-```bash
-poetry --version
-Poetry (version 1.2.0)
-```
-
-#### ℹ️ Poetry Basic Usage
-
-To add a new dependency:
-
-```bash
-poetry add <package-name>
-```
-
-If you only want your dependency to be installed in development mode:
-
-```bash
-poetry add --dev <package-name>
-```
-
-Install added dependencies:
-
-```bash
-poetry install
-```
 
 ## 🙋 Author
 
