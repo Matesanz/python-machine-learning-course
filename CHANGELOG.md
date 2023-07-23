@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.10.0 (2023-07-23)
+
+### Other
+
+* Merge pull request #20 from Matesanz:add-scikit-learn ([`518aa81`](https://github.com/Matesanz/python-machine-learning-course/commit/518aa813de09072a64f73d915e5c2154d7d48866))
+* 🍱 add metrics images ([`9b77466`](https://github.com/Matesanz/python-machine-learning-course/commit/9b77466c6d768519b9f525f4a50127cf899d6451))
+* ➕ add scikit learn to dependencies ([`34e6301`](https://github.com/Matesanz/python-machine-learning-course/commit/34e6301dad3339db8d518cfcf65ee62874341989))
+
 ## v0.9.1 (2023-07-19)
 
 ### Other
